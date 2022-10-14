@@ -1,38 +1,40 @@
 body {
   display: flex;
-
+  min-width: 1160px;
   align-items: center;
   justify-content: center;
   margin: 20px auto;
   font-family: Helvetica, sans-serif;
   background-color: rgb(252, 254, 253);
+  overflow-x: hidden;
 }
-.container {
-  background-size: cover;
+
+header {
+  position: static;
 }
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   float: left;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 .part_2 {
-  margin-right: 20px;
+  margin-right: 60px;
   float: right;
   letter-spacing: 0.2em;
 }
 
 .banner {
-  width: 99vw;
-  height: 280px;
+  width: 100vw;
+  min-width: 1160px;
+  height: 300px;
 }
 
 .solutions {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.solutions div {
-  display: inline-block;
+.solution {
   padding: 20px;
   text-align: center;
 }
