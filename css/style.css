@@ -1,0 +1,161 @@
+:root {
+  --blue-color: rgb(86, 134, 229);
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(252, 254, 253);
+}
+.container {
+  width: 100%;
+}
+header {
+  position: static;
+}
+.logo {
+  width: 100px;
+  height: 85px;
+  float: left;
+  margin-left: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover {
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  padding: 5px;
+  width: 95px;
+  height: 83px;
+}
+
+.part_2 {
+  margin-right: 60px;
+  float: right;
+  letter-spacing: 0.2em;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+}
+
+.solutions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.solution {
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.solution:hover {
+  background-color: rgb(229, 230, 231);
+  border-radius: 5px;
+}
+.img_solution {
+  width: 100%;
+  max-width: 340px;
+  height: 200px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+h4 {
+  font-weight: lighter;
+}
+.main-content h2 {
+  font-weight: 100;
+  color: #3d3d3d;
+  opacity: 0.7;
+}
+i {
+  color: #bb1f25;
+}
+hr {
+  border-top: 3px solid var(--blue-color);
+  border-bottom: none;
+}
+
+footer {
+  background-color: #3d3d3d;
+  opacity: 0.8;
+  text-align: center;
+  color: rgb(160, 164, 168);
+  padding: 30px 0;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+a {
+  color: white;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+a:hover {
+  color: var(--blue-color);
+  font-weight: 700;
+}
+
+/* on a smaller screen */
+@media (max-width: 650px) {
+  .solutions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .solution {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  img.img_solution {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 580px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    position: relative;
+  }
+  .logo {
+    width: 60px;
+    height: 55px;
+  }
+  .logo:hover {
+    width: 65px;
+    height: 58px;
+  }
+
+  .part_2 {
+    margin-left: 20px;
+  }
+  .hello {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.7em;
+  }
+  .banner {
+    height: 230px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}

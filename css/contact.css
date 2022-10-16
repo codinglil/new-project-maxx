@@ -1,0 +1,87 @@
+:root {
+  --btn-blue: rgb(45, 96, 196);
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(60, 81, 122);
+}
+form {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 81, 122);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+tr td {
+  margin-bottom: 10px;
+}
+
+span {
+  color: rgb(235, 54, 84);
+  font-weight: 600;
+}
+
+input:not(.btn) {
+  margin-bottom: 10px;
+  border-radius: 3px;
+  height: 30px;
+  padding-right: 73px;
+  width: fit-content;
+}
+
+input.btn {
+  background-color: var(--btn-blue);
+  color: white;
+  padding: 12px 57px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--btn-blue);
+  background-color: white;
+  cursor: pointer;
+  background-color: rgb(185, 203, 251);
+  border: 3px solid var(--btn-blue);
+}
+.btn:active,
+.btn-back:active {
+  transform: scale(0.95);
+}
+
+a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-back {
+  margin: 10px auto;
+  padding: 12px 20px;
+  background-color: #1a1919;
+  opacity: 0.8;
+  color: white;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  border: none;
+}
+.btn-back:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
